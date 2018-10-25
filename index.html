@@ -8,19 +8,19 @@
 
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-        <script src="jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
 
     </head>
 
     <body>
         <div class="container">
-            <div class="jumbotron">
                 <div class="container">
                     <div class="row">
                         <div class=col-lg-4>
                             <h1 id="game-title">Crystal Collector</h1>
                         </div>
                     </div>
+                </div>
                     <div class="row">
                         <div class="col-lg-6">
                             <h2>You will be given a random number at the start of the game.</h2>
@@ -42,8 +42,6 @@
 
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
 
         <div class="container">
@@ -69,10 +67,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                        <a href="#" onClick="document.form1.reset();"><img src="assets/images/blueCry.jpeg" width="100"></a>
-                        <a href="#" onClick="document.form1.reset();"><img src="assets/images/greenCry.jpeg" width="100"></a>
-                        <a href="#" onClick="document.form1.reset();"><img src="assets/images/orangeCry.png" width="100"></a>
-                        <a href="#" onClick="document.form1.reset();"><img src="assets/images/pinkCry.jpeg" width="100"></a>
+                        <a class="clickEvent" id="crystalClick1"><img src="assets/images/blueCry.jpeg" width="100"></a>
+                        <a class="clickEvent" id="crystalClick2"><img src="assets/images/greenCry.jpeg" width="100"></a>
+                        <a class="clickEvent" id="crystalClick3"><img src="assets/images/orangeCry.png" width="100"></a>
+                        <a class="clickEvent" id="crystalClick4"><img src="assets/images/pinkCry.jpeg" width="100"></a>
                 </div>
             </div>
         </div>

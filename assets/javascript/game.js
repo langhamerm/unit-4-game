@@ -23,11 +23,64 @@ function startGame() {
     var hiddenNum4 = Math.floor((Math.random() * 12) + 1);
     console.log(hiddenNum4);
     
-    document.getElementById("total-score").innerHTML = totalScore;
+    // $("#crystalClick1").attr("data-number", hiddenNum1);
+    document.getElementById("crystalClick1").setAttribute("data-number", hiddenNum1)
+    document.getElementById("crystalClick2").setAttribute("data-number", hiddenNum2)
+    document.getElementById("crystalClick3").setAttribute("data-number", hiddenNum3)
+    document.getElementById("crystalClick4").setAttribute("data-number", hiddenNum4)
+    
+    document.getElementById("total-score").innerHTML = totalScore = 0;
 
     document.getElementById("random-number").innerHTML = randomNum;
 
+    // checkScore();
+
+
+};
+
+startGame();
+
+
+function checkScore() {
+
+    if (totalScore === randomNum) {
+        winCounter++;
+        startGame();
+        console.log(winCounter);
+        $("#win-counter").html(winCounter);
+
+    }
+    else if (totalScore > randomNum) {
+        lossCounter++;
+        startGame();
+        console.log(lossCounter);
+        $("#loss-counter").html(lossCounter);
+    }
+    
 
 }
 
+
+$(".clickEvent").on("click", function(){
+
+    var num = $(this).attr("data-number")
+
+    var numba = parseInt(num);
+    
+    console.log('numba', typeof(numba));
+    console.log('ts', typeof(totalScore));
+
+
+    console.log('totalScoreBEFORE', totalScore);
+    totalScore += numba;
+
+    console.log('totalScoreAFTER', totalScore);
+    
+    
+    document.getElementById("total-score").innerHTML = totalScore;
+
+    checkScore();
+
+
+})
 
