@@ -1,3 +1,40 @@
-.jumbotron {
-    background-color: orange;
+body {
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BVmFKuwPxiyef0p7o/loopable-crystal-background-high-quality-loopable-background-rotate-crystals-in-the-space_hr2ysrywl_thumbnail-full01.png");
+}
+
+#game-title {
+    background-color: aqua;
+    margin-left: -30px;
+    font-family: fantasy;
+    font-weight: bolder;
+}
+
+.col-lg-6 {
+    background-color: aquamarine;
+}
+
+.col-lg-3 {
+    background-color: orangered;
+}
+
+#random-number {
+    text-align: center;
+}
+
+#rnumtitle {
+    text-align: center;
+    background-color: orangered;
+    
+}
+
+#win-loss {
+    background-color: yellow;
+}
+
+#randoCard {
+    background-color: orangered;
+}
+
+#scoreHead {
+    background-color: greenyellow;
 }
